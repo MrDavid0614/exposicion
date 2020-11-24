@@ -1,3 +1,20 @@
+Swal.fire({
+  title: 'Aviso',
+  text: "Para una mejor experiencia, es recomendable acceder a la página desde PC y activar la pantalla completa.",
+  icon: 'info',
+  showCancelButton: true,
+  confirmButtonColor: '#3085d6',
+  cancelButtonColor: '#d33',
+  confirmButtonText: 'Activar',
+  cancelButtonText: 'Cancelar'
+}).then((result) => {
+  if (result.isConfirmed) {
+    
+      document.documentElement.requestFullscreen();
+
+  }
+})
+
 const timelineSwiper = new Swiper ('.timeline .swiper-container', {
   direction: 'vertical',
   loop: false,
@@ -18,7 +35,3 @@ const timelineSwiper = new Swiper ('.timeline .swiper-container', {
 });
 
 ScrollReveal().reveal('.timeline', { delay: 300 });
-
-ScrollReveal().reveal('.frases', { delay: 900 });
-
-ScrollReveal().reveal('.genero', { delay: 700 });
