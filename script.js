@@ -35,3 +35,5 @@ const timelineSwiper = new Swiper ('.timeline .swiper-container', {
 });
 
 ScrollReveal().reveal('.timeline', { delay: 300 });
+
+ScrollReveal().reveal('.frases', { delay: 1500 });

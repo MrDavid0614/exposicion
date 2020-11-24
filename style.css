@@ -61,11 +61,13 @@ body {
   color: rgb(226, 226, 226);
   padding: 10px 10px;
   border-radius: 15px;
-  margin-right: 490px;
+  margin-left: 15px;
+  margin-right: 480px;
 }
 
 .menu ul li a {
   
+  margin-top: 6px;
   padding: 12px;
   text-decoration: none;
   color: #000000;
@@ -350,7 +352,7 @@ body {
 
 .frases {
 
-  visibility: hidden;
+  display: none;
   background-color: gainsboro;
   margin-top: 10px;
   padding: 10px 0 50px 0;
