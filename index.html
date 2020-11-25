@@ -12,6 +12,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css'>
   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800'><link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&display=swap" rel="stylesheet">
 
 </head>
 
@@ -71,19 +73,6 @@
 
             </div>
 
-            <div class="swiper-slide" style="background-image: url(./assets/Dachau.jpg)" data-year="1946">
-
-              <div class="swiper-slide-content"><span class="timeline-year">Segunda fase</span>
-                <h4 class="timeline-title"> Cambio a otro campo </h4>
-
-                <audio src="./assets/audio/Prueba.ogg" class="audio" controls>
-                  <p>Tu navegador no implementa el elemento audio.</p>
-                </audio>
-
-              </div>
-
-            </div>
-
             <div class="swiper-slide" style="background-image: url(./assets/liberacion.jpg); background-position: center;" data-year="1947">
 
               <div class="swiper-slide-content"><span class="timeline-year">Tercera fase</span>
@@ -111,17 +100,40 @@
 
     </div>
     
-    <div class="frases" id="frases">
+    <section class="section">
 
-      <blockquote> "No hay mal que por bien no venga."</blockquote>
+      <div class="frases-container">
 
-    </div>
+        <h2 id="frases" class="frases-title">Frases:</h2>
 
-    <div class="video" id="video">
+        <blockquote> “El que tiene un porqué para vivir, puede soportar casi cualquier cómo.”</blockquote>
 
+        <blockquote> "Hay cosas que nos hacen perder la razón, o entonces es que no tienes ninguna razón que perder."</blockquote>
 
-    </div>
+        <blockquote> "Ante una situación anormal, la reacción anormal constituye una conducta normal."</blockquote>
+        
+        <blockquote> "El aspecto más doloroso de los golpes es el insulto que incluyen"</blockquote>
+
+      </div>
+  
+      <aside>
+  
+        <div class="video-container" id="video">
+  
+          <h2 class="video-title">Ruta que atravesó el prisionero:</h2>
     
+          <video src="./assets/video/video.mp4" class="video" controls>
+            
+            <p>Tu navegador no implementa el elemento audio.</p>
+    
+          </video>
+    
+        </div>
+  
+      </aside>
+
+    </section>
+
   </main>
 
   <footer>

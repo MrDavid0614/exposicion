@@ -15,6 +15,8 @@ Swal.fire({
   }
 })
 
+let direction = screen.width >= 800? 'horizontal' : 'vertical';
+
 const timelineSwiper = new Swiper ('.timeline .swiper-container', {
   direction: 'vertical',
   loop: false,
@@ -29,11 +31,13 @@ const timelineSwiper = new Swiper ('.timeline .swiper-container', {
   prevButton: '.swiper-button-prev',
   breakpoints: {
     768: {
-      direction: 'horizontal',
+      direction: direction,
     }
   }
 });
 
 ScrollReveal().reveal('.timeline', { delay: 300 });
 
-ScrollReveal().reveal('.frases', { delay: 1500 });
+ScrollReveal().reveal('.frases-container', { delay: 1000 });
+
+ScrollReveal().reveal('.video-container', { delay: 1000 });
