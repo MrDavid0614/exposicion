@@ -75,8 +75,8 @@ Array.prototype.forEach.call(sounds, audio => {
 
 ScrollReveal().reveal('.timeline', { delay: 300 });
 
-ScrollReveal().reveal('.frases-container', { delay: 1000 });
+ScrollReveal().reveal('.frases-container', { delay: 600 });
 
-ScrollReveal().reveal('.video-container', { delay: 1500 });
+ScrollReveal().reveal('.video-container', { delay: 1000 });
 
-ScrollReveal().reveal('.integrantes', { delay: 1500 });
+ScrollReveal().reveal('.integrantes', { delay: 1000 });
