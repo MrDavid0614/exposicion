@@ -15,7 +15,7 @@ Swal.fire({
   }
 })
 
-let direction = screen.width >= 800? 'horizontal' : 'vertical';
+const direction = screen.width >= 800? 'horizontal' : 'vertical';
 
 const timelineSwiper = new Swiper ('.timeline .swiper-container', {
   direction: 'vertical',
@@ -36,8 +36,47 @@ const timelineSwiper = new Swiper ('.timeline .swiper-container', {
   }
 });
 
+const sounds = document.getElementsByTagName('audio');
+
+timelineSwiper.on('transitionEnd', ()=> {
+
+  for(i=0; i < sounds.length; i++) sounds[i].pause();
+
+})
+
+Array.prototype.forEach.call(sounds, audio => {
+
+  audio.addEventListener("play", ()=> {
+
+    for (let i = 0; i < sounds.length; i++) {
+    
+      if( !sounds[i].paused ) {
+    
+        for (let a = 0; a < sounds.length; a++) {
+
+          if(sounds[a] == sounds[i]) {
+
+            continue;
+            
+          }
+
+          sounds[a].pause();
+          
+        }
+    
+      }
+      
+    }  
+  
+  })
+
+})
+
+
 ScrollReveal().reveal('.timeline', { delay: 300 });
 
 ScrollReveal().reveal('.frases-container', { delay: 1000 });
 
-ScrollReveal().reveal('.video-container', { delay: 1000 });
+ScrollReveal().reveal('.video-container', { delay: 1500 });
+
+ScrollReveal().reveal('.integrantes', { delay: 1500 });
